@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
-from multiprocessing import Pool
-def run(task):
-  # Do something with task here
-    print("Handling {}".format(task))
-if __name__ == "__main__":
-  tasks = ['task1', 'task2', 'task3']
-  # Create a pool of specific number of CPUs
-  p = Pool(len(tasks))
-  # Start each task within the pool     
-  p.map(run, tasks)
-  os.walk() 
+import subprocess
+src = "/home/student-00-b67467437377/data/prod/"
+dest = "/home/student-00-b67467437377/data/prod_backup/"
+subprocess.call(["rsync", "-arq", src, dest])
+ 
