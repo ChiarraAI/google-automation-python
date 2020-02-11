@@ -1,5 +1,6 @@
 First Part
- #!/bin/bash
+........................................
+#!/bin/bash
 
 > oldFiles.txt
 
@@ -11,7 +12,9 @@ for i in $files; do
 	fi
 done
 
+
 Second part
+........................................
 #!/usr/bin/env python3
 
 import sys
