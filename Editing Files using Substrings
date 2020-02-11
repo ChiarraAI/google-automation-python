@@ -1,0 +1,5 @@
+#!/bin/bash 
+> oldFiles.txt
+grep ' jane ' ../data/list.txt
+if test -f  ~/data/jane_profile_07272018.doc; then echo "jane_profile_07272018.docs" >> oldFiles.txt; fi
+if test -f  ~/data/jane_contact_07292018.csv; then echo "jane_contact_07292018.csv" >> oldFiles.txt; fi
