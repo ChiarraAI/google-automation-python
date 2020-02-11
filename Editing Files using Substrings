@@ -33,3 +33,5 @@ with open(sys.argv[1],"r") as files:
         new_name = old_name.replace("jane","jode")
         subprocess.run(["mv",old_name,new_name])  
     files.close()
+    
+    
