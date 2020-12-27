@@ -33,7 +33,7 @@ f.close()
 with open(sys.argv[1],"r") as files:
     for line in files.readlines():
         old_name = line.strip()
-        new_name = old_name.replace("jane","jode")
+        new_name = old_name.replace("jane","jdoe")
         subprocess.run(["mv",old_name,new_name])  
     files.close()
     
